@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      textColor: {
+        primary: 'var(--text-primary)',
+        secondary: 'var(--text-secondary)',
+      },
+      backgroundColor: {
+        primary: 'var(--bg-primary)',
+        'primary-dark': 'var(--bg-primary-dark)',
+        'primary-button': 'var(--button-primary)',
+      },
       colors: {
         'light-orange': '#FFF1E9',
         'light-green': '#E0FDEF',

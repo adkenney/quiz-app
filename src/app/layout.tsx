@@ -16,7 +16,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${rubik.className} bg-mobile-pattern min-h-screen`}>
+      <body
+        className={`${rubik.className} text-primary bg-mobile-pattern min-h-screen`}
+      >
         <div className="bg-[#F4F6FA]/75 min-h-screen">
           <div className="flex justify-end px-6 py-4"></div>
           {children}

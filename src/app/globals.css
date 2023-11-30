@@ -2,5 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --bg-primary: #ffffff;
+    --bg-primary-dark: #3b4d66;
+    --text-primary: #313e51;
+    --text-secondary: #626c7f;
+    --button-primary: #a729f5;
+    --button-success: #26d782;
+    --button-error: #ee5454;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
 }

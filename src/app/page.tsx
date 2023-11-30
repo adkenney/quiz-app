@@ -12,32 +12,32 @@ export default function Home() {
       <div className="mb-10">
         <p className="text-[40px] font-light leading-10">Welcome to the</p>
         <h1 className="text-[40px] font-medium leading-10">Frontend Quiz!</h1>
-        <p className="italic text-sm font-normal mt-4 leading-5">
+        <p className="italic text-sm font-normal text-secondary mt-4 leading-5">
           Pick a subject to get started.
         </p>
       </div>
       <div>
         <ul className="flex flex-col gap-3">
           <QuizSelector
-            quizLink="/quiz"
+            quizLink="/quiz/html"
             imgSrc={htmlIcon}
             quizText="HTML"
             bgColor="bg-light-orange"
           />
           <QuizSelector
-            quizLink="/quiz"
+            quizLink="/quiz/css"
             imgSrc={cssIcon}
             quizText="CSS"
             bgColor="bg-light-green"
           />
           <QuizSelector
-            quizLink="/quiz"
+            quizLink="/quiz/javascript"
             imgSrc={jsIcon}
             quizText="Javascript"
             bgColor="bg-light-blue"
           />
           <QuizSelector
-            quizLink="/quiz"
+            quizLink="/quiz/accessibility"
             imgSrc={accessabilityIcon}
             quizText="Accessibility"
             bgColor="bg-light-purple"
