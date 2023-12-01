@@ -3,5 +3,5 @@ export default function QuizLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <section>{children}</section>;
+  return <section className="px-6">{children}</section>;
 }
