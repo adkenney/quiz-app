@@ -18,7 +18,7 @@ export default function QuizSelector({
 
   return (
     <div onClick={() => router.push(quizLink)}>
-      <li className="flex items-center gap-3 p-3 bg-primary rounded-xl text-lg leading-6">
+      <li className="flex items-center gap-3 p-3 bg-primary rounded-xl text-lg leading-6 cursor-pointer">
         <Image
           className={`${bgColor} p-1 rounded-md`}
           src={imgSrc}

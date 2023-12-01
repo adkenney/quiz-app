@@ -6,7 +6,7 @@ import quizData from '../../../../public/assets/data.json';
 
 export default function QuizPage() {
   const params = useParams();
-  const [question, setQuestion] = useState(0);
+  const [questionIndex, setQuestionIndex] = useState(0);
 
   const filteredQuiz = quizData.quizzes.filter(
     quiz => quiz.title.toLowerCase() === params.category
@@ -14,26 +14,26 @@ export default function QuizPage() {
 
   return (
     <div>
-      {filteredQuiz.map(quiz => {
+      {filteredQuiz.map((quiz, idx) => {
         return (
-          <>
+          <div key={idx}>
             <h1>{quiz.title}</h1>
             <p className="text-secondary italic">
-              Question {question + 1} of {quiz.questions.length}
+              Question {questionIndex + 1} of {quiz.questions.length}
             </p>
-            <h2>{quiz.questions[question].question}</h2>
+            <h2>{quiz.questions[questionIndex].question}</h2>
             <ul>
-              {quiz.questions[question].options.map(option => {
-                return <li>{option}</li>;
+              {quiz.questions[questionIndex].options.map((option, idx) => {
+                return <li key={idx}>{option}</li>;
               })}
             </ul>
             <button
               className="bg-primary-button rounded-md p-3"
-              onClick={() => setQuestion(curr => curr + 1)}
+              onClick={() => setQuestionIndex(curr => curr + 1)}
             >
               Submit Answer
             </button>
-          </>
+          </div>
         );
       })}
     </div>
