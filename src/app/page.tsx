@@ -22,25 +22,17 @@ export default function Home() {
             quizLink="/quiz/html"
             imgSrc={htmlIcon}
             quizText="HTML"
-            bgColor="bg-light-orange"
           />
-          <QuizSelector
-            quizLink="/quiz/css"
-            imgSrc={cssIcon}
-            quizText="CSS"
-            bgColor="bg-light-green"
-          />
+          <QuizSelector quizLink="/quiz/css" imgSrc={cssIcon} quizText="CSS" />
           <QuizSelector
             quizLink="/quiz/javascript"
             imgSrc={jsIcon}
             quizText="Javascript"
-            bgColor="bg-light-blue"
           />
           <QuizSelector
             quizLink="/quiz/accessibility"
             imgSrc={accessabilityIcon}
             quizText="Accessibility"
-            bgColor="bg-light-purple"
           />
         </ul>
       </div>

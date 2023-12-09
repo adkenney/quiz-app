@@ -11,3 +11,15 @@ export function handleLetter(option: number) {
       return 'D';
   }
 }
+
+export function backgroundColor(quizType: string) {
+  if (quizType === 'html') {
+    return 'bg-light-orange';
+  } else if (quizType === 'css') {
+    return 'bg-light-green';
+  } else if (quizType === 'javascript') {
+    return 'bg-light-blue';
+  } else if (quizType === 'accessibility') {
+    return 'bg-light-purple';
+  }
+}

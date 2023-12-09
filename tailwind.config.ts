@@ -16,12 +16,22 @@ const config: Config = {
         primary: 'var(--bg-primary)',
         'primary-dark': 'var(--bg-primary-dark)',
         'primary-button': 'var(--button-primary)',
+        success: 'var(--button-success)',
+        error: 'var(--button-error)',
+      },
+      borderColor: {
+        primary: 'var(--button-primary)',
+        success: 'var(--button-success)',
+        error: 'var(--button-error)',
       },
       colors: {
         'light-orange': '#FFF1E9',
         'light-green': '#E0FDEF',
         'light-blue': '#EBF0FF',
         'light-purple': '#F6E7FF',
+        'dark-purple': 'var(--button-primary)',
+        success: 'var(--button-success)',
+        error: 'var(--button-error)',
       },
       backgroundImage: {
         'mobile-pattern':
