@@ -75,5 +75,5 @@ npm run dev
 
 ## Author
 
-- Website - [Arkell Kenney](https://www.arkellkenney.com/)
+- Website - [arkellkenney.com](https://www.arkellkenney.com/)
 - Frontend Mentor - [@adkenney](https://www.frontendmentor.io/profile/adkenney)
