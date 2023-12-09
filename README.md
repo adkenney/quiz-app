@@ -2,19 +2,6 @@
 
 This is a solution to the [Frontend quiz app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/frontend-quiz-app-BE7xkzXQnU). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Technologies used](#technologies-used)
-  - [Links](#links)
-  - [Installation](#installation)
-- [My process](#my-process)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-- [Author](#author)
-
 ## Overview
 
 ### The challenge
