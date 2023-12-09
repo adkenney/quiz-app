@@ -53,13 +53,19 @@ Users should be able to:
 ### Installation
 
 Clone the repository using the following command:  
-`git clone https://github.com/adkenney/quiz-app`
+```
+git clone https://github.com/adkenney/quiz-app
+```
 
 Install project dependencies by running:  
-`npm install`
+```
+npm install
+```
 
 Start development server with:  
-`npm run dev`
+```
+npm run dev
+```
 
 ## My process
 
