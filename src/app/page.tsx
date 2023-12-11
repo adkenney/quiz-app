@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import QuizSelector from '@/components/QuizSelector';
 import htmlIcon from '../../public/assets/icons/icon-html.svg';
 import cssIcon from '../../public/assets/icons/icon-css.svg';

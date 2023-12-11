@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Rubik } from 'next/font/google';
 import './globals.css';
+import Header from '@/components/Header';
 
 const rubik = Rubik({ subsets: ['latin'] });
 
@@ -17,10 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${rubik.className} text-primary bg-mobile-pattern min-h-screen`}
+        className={`${rubik.className} text-primary bg-mobile-pattern md:bg-tablet-pattern lg:bg-desktop-pattern min-h-screen bg-no-repeat`}
       >
         <div className="bg-[#F4F6FA]/75 min-h-screen">
-          <div className="flex justify-end px-6 py-4"></div>
+          <Header />
           {children}
         </div>
       </body>
