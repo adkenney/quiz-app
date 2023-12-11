@@ -2,19 +2,6 @@
 
 This is a solution to the [Frontend quiz app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/frontend-quiz-app-BE7xkzXQnU). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Table of contents
-
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Technologies used](#technologies-used)
-  - [Links](#links)
-  - [Installation](#installation)
-- [My process](#my-process)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-- [Author](#author)
-
 ## Overview
 
 ### The challenge
@@ -53,13 +40,19 @@ Users should be able to:
 ### Installation
 
 Clone the repository using the following command:  
-`git clone https://github.com/adkenney/quiz-app`
+```
+git clone https://github.com/adkenney/quiz-app
+```
 
 Install project dependencies by running:  
-`npm install`
+```
+npm install
+```
 
 Start development server with:  
-`npm run dev`
+```
+npm run dev
+```
 
 ## My process
 
@@ -69,5 +62,5 @@ Start development server with:
 
 ## Author
 
-- Website - [Arkell Kenney](https://www.arkellkenney.com/)
+- Website - [arkellkenney.com](https://www.arkellkenney.com/)
 - Frontend Mentor - [@adkenney](https://www.frontendmentor.io/profile/adkenney)
