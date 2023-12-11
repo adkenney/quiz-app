@@ -23,3 +23,24 @@ export function backgroundColor(quizType: string) {
     return 'bg-light-purple';
   }
 }
+
+export function handleCategoryIcon(category: string | string[]) {
+  if (category === 'html') {
+    return '/assets/icons/icon-html.svg';
+  } else if (category === 'css') {
+    return '/assets/icons/icon-css.svg';
+  } else if (category === 'javascript') {
+    return '/assets/icons/icon-js.svg';
+  } else if (category === 'accessibility') {
+    return '/assets/icons/icon-accessibility.svg';
+  } else {
+    return '';
+  }
+}
+
+export const categories: string[] = [
+  'html',
+  'css',
+  'javascript',
+  'accessibility',
+];

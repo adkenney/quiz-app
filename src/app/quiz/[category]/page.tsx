@@ -69,7 +69,7 @@ export default function QuizPage() {
     <div>
       {filteredQuiz.map((quiz, idx) => {
         return (
-          <div key={idx} className="flex flex-col gap-10">
+          <div key={idx} className="flex flex-col gap-10 pt-8">
             <div>
               <p className="text-sm text-secondary italic mb-3">
                 Question {questionIndex + 1} of {quiz.questions.length}
