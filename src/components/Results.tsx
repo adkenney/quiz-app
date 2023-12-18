@@ -27,7 +27,7 @@ export default function Results({
         </p>
       </div>
       <div className="flex flex-col gap-3">
-        <div className="flex flex-col justify-center items-center bg-white p-8 md:p-12 rounded-xl md:rounded-3xl shadow-sm">
+        <div className="flex flex-col justify-center items-center bg-white dark:bg-secondary-dark p-8 md:p-12 rounded-xl md:rounded-3xl shadow-sm">
           <div className="flex items-center gap-4 md:gap-6">
             <span
               className={`flex items-center ${backgroundColor(
@@ -45,7 +45,7 @@ export default function Results({
             <p className="text-lg md:text-[1.75rem] font-medium">{quizType}</p>
           </div>
           <p className="text-[5.5rem] md:text-[9rem] font-medium">{score}</p>
-          <p className="text-lg md:text-2xl text-secondary font-light">
+          <p className="text-lg md:text-2xl text-secondary dark:text-secondary-dark font-light">
             out of 10
           </p>
         </div>
