@@ -34,6 +34,7 @@ export default function Header() {
           alt=""
         />
         <Switch
+          aria-label="theme toggle"
           className="ml-auto"
           onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
           checked={theme === 'dark' ? true : false}

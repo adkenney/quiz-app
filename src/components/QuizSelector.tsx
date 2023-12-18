@@ -16,8 +16,11 @@ export default function QuizSelector({
   const router = useRouter();
 
   return (
-    <div onClick={() => router.push(quizLink)}>
-      <li className="flex items-center gap-3 md:gap-8 p-3 bg-primary dark:bg-secondary-dark rounded-xl text-lg md:text-[1.75rem] font-medium leading-6 cursor-pointer">
+    <>
+      <li
+        className="flex items-center gap-3 md:gap-8 p-3 bg-primary dark:bg-secondary-dark rounded-xl text-lg md:text-[1.75rem] font-medium leading-6 cursor-pointer"
+        onClick={() => router.push(quizLink)}
+      >
         <Image
           className={`${backgroundColor(
             quizText.toLowerCase()
@@ -29,6 +32,6 @@ export default function QuizSelector({
         />
         {quizText}
       </li>
-    </div>
+    </>
   );
 }

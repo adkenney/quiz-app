@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${rubik.className} text-primary bg-[#F4F6FA] dark:bg-primary-dark dark:text-white`}
+        className={`${rubik.className} text-primary bg-[#F4F6FA] dark:bg-primary-dark dark:text-white min-h-screen`}
       >
         <Providers>
           <div className="bg-mobile-pattern md:bg-tablet-pattern lg:bg-desktop-pattern dark:bg-mobile-pattern-dark dark:md:bg-tablet-pattern-dark dark:lg:bg-desktop-pattern-dark bg-no-repeat min-h-screen">

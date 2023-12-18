@@ -627,6 +627,9 @@ video {
 .inline-flex {
   display: inline-flex;
 }
+.grid {
+  display: grid;
+}
 .hidden {
   display: none;
 }
@@ -644,6 +647,9 @@ video {
 }
 .h-full {
   height: 100%;
+}
+.h-screen {
+  height: 100vh;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -668,6 +674,9 @@ video {
 }
 .flex-col {
   flex-direction: column;
+}
+.place-items-center {
+  place-items: center;
 }
 .items-center {
   align-items: center;
