@@ -11,15 +11,19 @@ export default function HeaderCategory({
   return (
     <>
       {categories.includes(category as string) ? (
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 md:gap-6">
           <Image
-            className={`${backgroundColor(category as string)} p-1 rounded-md`}
+            className={`${backgroundColor(
+              category as string
+            )} p-1 rounded-md md:rounded-xl md:h-14 md:w-14`}
             src={handleCategoryIcon(category)}
             width={40}
             height={40}
             alt=""
           />
-          <p className="text-lg font-medium">{category.toUpperCase()}</p>
+          <p className="text-lg md:text-[1.75rem] font-medium uppercase">
+            {category}
+          </p>
         </div>
       ) : null}
     </>

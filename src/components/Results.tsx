@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import React from 'react';
 import { backgroundColor } from '@/utils';
+import Button from './Button';
 
 export default function Results({
   score,
@@ -16,31 +17,40 @@ export default function Results({
 }) {
   const router = useRouter();
   return (
-    <div>
-      <p className="text-[40px] font-light">Quiz completed</p>
-      <p className="text-[40px] font-medium mb-10">You scored...</p>
+    <section className="py-8 px-6 md:px-16 lg:grid lg:grid-cols-2 lg:px-36">
+      <div>
+        <p className=" text-[2.5rem] md:text-[4rem] font-light md:leading-[100%]">
+          Quiz completed
+        </p>
+        <p className="text-[2.5rem] md:text-[4rem] font-medium mb-10 md:mb-16 md:leading-[100%]">
+          You scored...
+        </p>
+      </div>
       <div className="flex flex-col gap-3">
-        <div className="flex flex-col justify-center items-center bg-white p-8 rounded-xl shadow-sm">
-          <div className="flex items-center gap-4">
+        <div className="flex flex-col justify-center items-center bg-white p-8 md:p-12 rounded-xl md:rounded-3xl shadow-sm">
+          <div className="flex items-center gap-4 md:gap-6">
             <span
               className={`flex items-center ${backgroundColor(
                 quizType.toLowerCase()
-              )} p-1 rounded-md`}
+              )} p-1 rounded-md md:rounded-xl`}
             >
-              <Image src={icon} height={30} width={30} alt="" />
+              <Image
+                className="md:h-14 md:w-14"
+                src={icon}
+                height={30}
+                width={30}
+                alt=""
+              />
             </span>
-            <p className="text-lg font-medium">{quizType}</p>
+            <p className="text-lg md:text-[1.75rem] font-medium">{quizType}</p>
           </div>
-          <p className="text-[88px] font-medium">{score}</p>
-          <p className="text-lg text-secondary font-normal">out of 10</p>
+          <p className="text-[5.5rem] md:text-[9rem] font-medium">{score}</p>
+          <p className="text-lg md:text-2xl text-secondary font-light">
+            out of 10
+          </p>
         </div>
-        <button
-          className="bg-primary-button text-white text-lg font-medium p-3 rounded-xl"
-          onClick={() => router.push('/')}
-        >
-          Play Again
-        </button>
+        <Button text="Play Again" handleClick={() => router.push('/')}></Button>
       </div>
-    </div>
+    </section>
   );
 }

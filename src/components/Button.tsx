@@ -9,7 +9,7 @@ export default function Button({
 }) {
   return (
     <button
-      className="text-white text-lg font-medium bg-primary-button rounded-xl p-3 mt-3 hover:opacity-50 w-full"
+      className="text-white text-lg md:text-[1.75rem] font-medium bg-primary-button rounded-xl md:rounded-3xl p-3 md:p-8 mt-3 md:mt-8 hover:opacity-50 w-full"
       onClick={handleClick}
     >
       {text}

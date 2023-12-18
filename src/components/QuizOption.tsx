@@ -28,7 +28,7 @@ export default function QuizOption({
   const letter = handleLetter(id);
 
   return (
-    <li className="group flex items-center text-lg font-medium cursor-pointer">
+    <li className="group flex items-center text-lg md:text-[1.75rem] font-medium cursor-pointer">
       <input
         type="radio"
         name="choice"
@@ -42,7 +42,7 @@ export default function QuizOption({
       <label
         className={`${correct ? 'peer-checked:border-success ' : ''} ${
           wrong ? 'peer-checked:border-error ' : 'peer-checked:border-primary '
-        }flex items-center bg-white p-3 gap-4 rounded-xl peer-checked:border-[3px] cursor-pointer w-full`}
+        }flex items-center bg-white p-3 gap-4 md:gap-8 rounded-xl md:rounded-3xl peer-checked:border-[3px] cursor-pointer w-full`}
         htmlFor={`choice-${id}`}
       >
         <span
@@ -50,7 +50,7 @@ export default function QuizOption({
             wrong && selected ? 'bg-error ' : ''
           } ${
             selected && !wrong ? 'bg-primary-button ' : 'bg-[#F4F6FA] '
-          }flex shrink-0 justify-center items-center h-10 w-10 rounded-md group-hover:bg-light-purple group-hover:text-dark-purple`}
+          }flex shrink-0 justify-center items-center h-10 w-10 md:h-14 md:w-14 rounded-md md:rounded-xl group-hover:bg-light-purple group-hover:text-dark-purple`}
         >
           {letter}
         </span>

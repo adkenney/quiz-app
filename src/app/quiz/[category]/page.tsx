@@ -69,12 +69,15 @@ export default function QuizPage() {
     <div>
       {filteredQuiz.map((quiz, idx) => {
         return (
-          <div key={idx} className="flex flex-col gap-10 pt-8">
+          <div
+            key={idx}
+            className="flex flex-col gap-10 pt-8 px-6 lg:grid lg:grid-cols-2 md:px-16 lg:px-32"
+          >
             <div>
-              <p className="text-sm text-secondary italic mb-3">
+              <p className="text-sm text-secondary italic mb-3 md:text-xl">
                 Question {questionIndex + 1} of {quiz.questions.length}
               </p>
-              <h2 className="text-xl font-medium">
+              <h2 className="text-xl font-medium md:text-4xl">
                 {quiz.questions[questionIndex].question}
               </h2>
               <ProgressBar progress={questionIndex + 1} />
