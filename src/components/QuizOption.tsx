@@ -49,7 +49,9 @@ export default function QuizOption({
           className={`${correct ? 'bg-success ' : ''} ${
             wrong && selected ? 'bg-error ' : ''
           } ${
-            selected && !wrong ? 'bg-primary-button ' : 'bg-[#F4F6FA] '
+            selected && !wrong
+              ? 'bg-primary-button dark:text-white '
+              : 'bg-[#F4F6FA] '
           }flex shrink-0 justify-center items-center dark:text-icon-dark h-10 w-10 md:h-14 md:w-14 rounded-md md:rounded-xl group-hover:bg-light-purple group-hover:text-dark-purple`}
         >
           {letter}
