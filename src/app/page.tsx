@@ -14,7 +14,7 @@ export default function Home() {
         <h1 className="text-[2.5rem] md:text-[4rem] font-medium leading-10 md:leading-[100%]">
           Frontend Quiz!
         </h1>
-        <p className="italic text-sm md:text-xl font-normal text-secondary mt-4 leading-5">
+        <p className="italic text-sm md:text-xl font-normal text-secondary dark:text-secondary-dark mt-4 leading-5">
           Pick a subject to get started.
         </p>
       </div>

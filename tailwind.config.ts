@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  darkMode: ['class'],
+  darkMode: 'class',
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
@@ -19,10 +19,13 @@ module.exports = {
       textColor: {
         primary: 'var(--text-primary)',
         secondary: 'var(--text-secondary)',
+        'secondary-dark': 'var(--text-secondary-dark)',
+        'icon-dark': 'var(--icon-dark)',
       },
       backgroundColor: {
         primary: 'var(--bg-primary)',
         'primary-dark': 'var(--bg-primary-dark)',
+        'secondary-dark': 'var(--bg-secondary-dark)',
         'primary-button': 'var(--button-primary)',
         success: 'var(--button-success)',
         error: 'var(--button-error)',
@@ -86,6 +89,12 @@ module.exports = {
           'url(/assets/images/pattern-background-tablet-light.svg)',
         'desktop-pattern':
           'url(/assets/images/pattern-background-desktop-light.svg)',
+        'mobile-pattern-dark':
+          'url(/assets/images/pattern-background-mobile-dark.svg)',
+        'tablet-pattern-dark':
+          'url(/assets/images/pattern-background-tablet-dark.svg)',
+        'desktop-pattern-dark':
+          'url(/assets/images/pattern-background-desktop-dark.svg)',
       },
       keyframes: {
         'accordion-down': {

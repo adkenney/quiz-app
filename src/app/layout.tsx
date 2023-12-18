@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Rubik } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
+import Providers from '@/providers';
 
 const rubik = Rubik({ subsets: ['latin'] });
 
@@ -15,15 +16,18 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // bg-[#F4F6FA]/75 dark:bg-[#313e51]/9
   return (
     <html lang="en">
       <body
-        className={`${rubik.className} text-primary bg-mobile-pattern md:bg-tablet-pattern lg:bg-desktop-pattern min-h-screen bg-no-repeat`}
+        className={`${rubik.className} text-primary bg-[#F4F6FA] dark:bg-primary-dark dark:text-white`}
       >
-        <div className="bg-[#F4F6FA]/75 min-h-screen">
-          <Header />
-          {children}
-        </div>
+        <Providers>
+          <div className="bg-mobile-pattern md:bg-tablet-pattern lg:bg-desktop-pattern dark:bg-mobile-pattern-dark dark:md:bg-tablet-pattern-dark dark:lg:bg-desktop-pattern-dark bg-no-repeat min-h-screen">
+            <Header />
+            {children}
+          </div>
+        </Providers>
       </body>
     </html>
   );

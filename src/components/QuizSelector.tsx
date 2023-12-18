@@ -17,7 +17,7 @@ export default function QuizSelector({
 
   return (
     <div onClick={() => router.push(quizLink)}>
-      <li className="flex items-center gap-3 md:gap-8 p-3 bg-primary rounded-xl text-lg md:text-[1.75rem] font-medium leading-6 cursor-pointer">
+      <li className="flex items-center gap-3 md:gap-8 p-3 bg-primary dark:bg-secondary-dark rounded-xl text-lg md:text-[1.75rem] font-medium leading-6 cursor-pointer">
         <Image
           className={`${backgroundColor(
             quizText.toLowerCase()

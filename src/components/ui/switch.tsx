@@ -2,6 +2,7 @@
 
 import * as React from 'react';
 import * as SwitchPrimitives from '@radix-ui/react-switch';
+import { useTheme } from 'next-themes';
 
 import { cn } from '@/lib/utils';
 
@@ -19,7 +20,7 @@ const Switch = React.forwardRef<
   >
     <SwitchPrimitives.Thumb
       className={cn(
-        'pointer-events-none block h-3 w-3 md:h-4 md:w-4 rounded-full bg-background shadow-lg ring-0 transition-transform data-[state=checked]:translate-x-4 data-[state=unchecked]:translate-x-0 md:data-[state=checked]:translate-x-5'
+        'pointer-events-none block h-3 w-3 md:h-4 md:w-4 rounded-full bg-background shadow-lg ring-0 transition-transform data-[state=checked]:translate-x-4 data-[state=unchecked]:translate-x-0 md:data-[state=checked]:translate-x-5 checked'
       )}
     />
   </SwitchPrimitives.Root>
