@@ -12,7 +12,7 @@ import ProgressBar from '@/components/ProgressBar';
 
 export default function QuizPage() {
   const params = useParams();
-  const [questionIndex, setQuestionIndex] = useState(9);
+  const [questionIndex, setQuestionIndex] = useState(0);
   const [answerChoice, setAnswerChoice] = useState('');
   const [score, setScore] = useState(0);
   const [correct, setCorrect] = useState(false);
